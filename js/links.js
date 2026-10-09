@@ -11,7 +11,7 @@ window.LINKS = {
 
   // Certificate links (LinkedIn credential URL, Credly badge, Google Cloud Skills Boost, etc.)
   "cert-sap": "https://www.credly.com/badges/8db7187b-523a-4593-aeab-9bdb3e02dd98/public_url",
-  "cert-gcp": "",
+  "cert-gcp": "https://www.credly.com/badges/7bc3b847-ccff-4372-b477-a44a3cf4332c/public_url",
   "cert-aws": "",
   "cert-servicenow": ""
 };
