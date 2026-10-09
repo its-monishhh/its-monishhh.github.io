@@ -7,7 +7,14 @@ window.LINKS = {
   "neurograph-live": "https://biograph-seven.vercel.app/",
   "neurograph-github": "https://github.com/its-monishhh/biograph",
   "perm-github": "",
+  "perm-live": "",
   "chat-github": "",
+  "event-github": "https://github.com/its-monishhh/event_app_final_b",
+  "event-live": "",
+  "skillnest-github": "https://github.com/OPxKK/skill-nest-learning-hub",
+  "skillnest-live": "https://snlh.netlify.app",
+
+  
 
   // Certificate links (LinkedIn credential URL, Credly badge, Google Cloud Skills Boost, etc.)
   "cert-sap": "https://www.credly.com/badges/8db7187b-523a-4593-aeab-9bdb3e02dd98/public_url",
