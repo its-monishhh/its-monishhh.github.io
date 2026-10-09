@@ -1,12 +1,11 @@
 // Edit this file to add your links. Leave a value as "" to hide that button.
-// Paste each URL between the quotes, for example: github: "https://github.com/its-monishhh"
 window.LINKS = {
-  linkedin: "",
-  github: "",
+  linkedin: "https://www.linkedin.com/in/monishu03",
+  github: "https://github.com/its-monishhh",
 
   // Project links
-  "neurograph-live": "",
-  "neurograph-github": "",
+  "neurograph-live": "https://biograph-seven.vercel.app/",
+  "neurograph-github": "https://github.com/its-monishhh/biograph",
   "perm-github": "",
   "chat-github": "",
 
