@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monish U – Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Monish U, a full-stack developer and Information Science undergraduate in Bengaluru working across AI/ML, data engineering and web apps.">
+<meta property="og:title" content="Monish U – Full-Stack Developer">
+<meta property="og:description" content="Projects in graph neural networks, predictive resource management and BLE mesh networking.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#a58bff">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="glass" aria-label="Main">
+  <b>Monish U</b>
+  <div class="links">
+    <a class="l" href="#projects">Projects</a>
+    <a class="l" href="#skills">Skills</a>
+    <a class="l hide" href="#proof">Certifications</a>
+    <a class="l" href="#contact">Contact</a>
+    <button id="theme" aria-label="Toggle light and dark theme">◐</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas id="graph" aria-hidden="true"></canvas>
+  <div class="wrap"><div class="in">
+    <span class="pill glass"><i></i>Open to internships and full-time roles</span>
+    <h1>I build software that learns, predicts and connects.</h1>
+    <p class="lead">I'm Monish, a full-stack developer and Information Science undergraduate in Bengaluru. I work across AI/ML, data engineering and web apps, from graph neural networks to mesh-networked Android apps.</p>
+    <div class="btns">
+      <a class="btn p" href="#projects">See my projects</a>
+      <a class="btn" href="#contact">Get in touch</a>
+      <a class="btn" href="assets/Monish_U_Resume.pdf" download="Monish_U_Resume.pdf">Download resume</a>
+    </div>
+  </div></div>
+</header>
+
+<main>
+<section id="projects"><div class="wrap">
+  <h2>Selected projects</h2>
+  <p class="sub">Three things I've built end to end. Open one to see what it does and what it runs on.</p>
+
+  <article class="proj glass" data-open="false">
+    <button aria-expanded="false"><span><h3>NeuroGraph</h3><span class="tag">A drug-repurposing platform that combines graph neural networks with knowledge-graph reasoning</span></span><span class="plus" aria-hidden="true">+</span></button>
+    <div class="body"><div><div class="pad">
+      <ul>
+        <li>Ranks drug-repurposing candidates by analysing relationships across drugs, diseases, genes, pathways and treatments.</li>
+        <li>Explainable pipeline: GNN-based scoring plus rule-based reasoning, so each recommendation comes with interpretable biological evidence.</li>
+        <li>Chest X-ray module built on a pre-trained DenseNet121 in PyTorch that detects abnormalities and maps findings to related diseases.</li>
+      </ul>
+      <ul class="chips"><li>Python</li><li>FastAPI</li><li>PyTorch</li><li>DenseNet121</li><li>Neo4j Aura</li><li>React JS</li><li>TypeScript</li><li>D3.js</li></ul>
+      <div class="plinks"><a href="#" data-link="neurograph-live">Live website</a><a href="#" data-link="neurograph-github">GitHub</a></div>
+    </div></div></div>
+  </article>
+
+  <article class="proj glass" data-open="false">
+    <button aria-expanded="false"><span><h3>PERM</h3><span class="tag">Predictive edge resource management that forecasts CPU load and latency 30 seconds ahead</span></span><span class="plus" aria-hidden="true">+</span></button>
+    <div class="body"><div><div class="pad">
+      <ul>
+        <li>Monitors CPU, memory and response latency under simulated workloads to catch performance problems before users feel them.</li>
+        <li>A VotingRegressor ensemble trained on sliding-window telemetry, with time-based splits to keep evaluation honest.</li>
+        <li>SLO-based alerting and automated remediation that adjusts system capacity when a breach is predicted.</li>
+      </ul>
+      <ul class="chips"><li>Python</li><li>Flask</li><li>REST APIs</li><li>Scikit-learn</li><li>Locust</li><li>Psutil</li><li>Pandas</li><li>NumPy</li><li>Git</li></ul>
+      <div class="plinks"><a href="#" data-link="perm-github">GitHub</a></div>
+    </div></div></div>
+  </article>
+
+  <article class="proj glass" data-open="false">
+    <button aria-expanded="false"><span><h3>Decentralized Bluetooth Chat</h3><span class="tag">An Android chat app that works with no internet, cell network or server</span></span><span class="plus" aria-hidden="true">+</span></button>
+    <div class="body"><div><div class="pad">
+      <ul>
+        <li>Phones relay messages to each other over a BLE mesh, hopping across nearby devices to reach people out of direct range.</li>
+        <li>TTL-based routing, node discovery and duplicate-message filtering keep delivery reliable as people move.</li>
+        <li>Live GPS sharing and SOS broadcasts use compact BLE packets, so priority alerts still travel where normal connectivity is gone.</li>
+      </ul>
+      <ul class="chips"><li>Java</li><li>Android</li><li>BLE Mesh</li><li>Bluetooth GATT</li><li>GPS</li><li>Git</li></ul>
+      <div class="plinks"><a href="#" data-link="chat-github">GitHub</a></div>
+    </div></div></div>
+  </article>
+  <!-- ADD A NEW PROJECT: copy the whole <article> below, paste it above this comment, edit the text,
+       and add a matching key (for example "myapp-github") to js/links.js
+  <article class="proj glass" data-open="false">
+    <button aria-expanded="false"><span><h3>Project name</h3><span class="tag">One-line summary</span></span><span class="plus" aria-hidden="true">+</span></button>
+    <div class="body"><div><div class="pad">
+      <ul><li>What it does.</li><li>How you built it.</li></ul>
+      <ul class="chips"><li>Python</li><li>React JS</li></ul>
+      <div class="plinks"><a href="#" data-link="myapp-github">GitHub</a><a href="#" data-link="myapp-live">Live website</a></div>
+    </div></div></div>
+  </article>
+  -->
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>What I work with</h2>
+  <p class="sub">Grouped by area. Open a row to see everything in it.</p>
+  <article class="proj glass" data-open="true">
+    <button aria-expanded="true"><span><h3>Languages</h3><span class="tag">Python, C++, C, R</span></span><span class="plus" aria-hidden="true">+</span></button>
+    <div class="body"><div><div class="pad"><ul class="chips"><li>Python</li><li>C++</li><li>C</li><li>R</li></ul></div></div></div>
+  </article>
+  <article class="proj glass" data-open="true">
+    <button aria-expanded="true"><span><h3>Frameworks and web</h3><span class="tag">React, Flask, FastAPI and REST APIs</span></span><span class="plus" aria-hidden="true">+</span></button>
+    <div class="body"><div><div class="pad"><ul class="chips"><li>React JS</li><li>Flask</li><li>FastAPI</li><li>REST APIs</li><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul></div></div></div>
+  </article>
+  <article class="proj glass" data-open="true">
+    <button aria-expanded="true"><span><h3>Data and machine learning</h3><span class="tag">PyTorch, TensorFlow, Scikit-learn and data tooling</span></span><span class="plus" aria-hidden="true">+</span></button>
+    <div class="body"><div><div class="pad"><ul class="chips"><li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Power BI</li><li>D3.js</li></ul></div></div></div>
+  </article>
+  <article class="proj glass" data-open="true">
+    <button aria-expanded="true"><span><h3>Databases</h3><span class="tag">SQL, MySQL, Neo4j Aura and Supabase</span></span><span class="plus" aria-hidden="true">+</span></button>
+    <div class="body"><div><div class="pad"><ul class="chips"><li>SQL</li><li>MySQL</li><li>Neo4j Aura</li><li>Graph Database</li><li>Supabase</li></ul></div></div></div>
+  </article>
+  <article class="proj glass" data-open="true">
+    <button aria-expanded="true"><span><h3>Cloud and DevOps</h3><span class="tag">Docker, AWS, Google Cloud and Git</span></span><span class="plus" aria-hidden="true">+</span></button>
+    <div class="body"><div><div class="pad"><ul class="chips"><li>Docker</li><li>AWS</li><li>Google Cloud</li><li>SonarQube</li><li>Git</li><li>GitHub</li></ul></div></div></div>
+  </article>
+  <article class="proj glass" data-open="true">
+    <button aria-expanded="true"><span><h3>Engineering practice</h3><span class="tag">Testing, debugging, analysis and automation</span></span><span class="plus" aria-hidden="true">+</span></button>
+    <div class="body"><div><div class="pad"><ul class="chips"><li>Software Testing</li><li>Debugging</li><li>Data Analysis</li><li>Application Integration</li><li>Automation</li></ul></div></div></div>
+  </article>
+  <article class="proj glass" data-open="true">
+    <button aria-expanded="true"><span><h3>Tools</h3><span class="tag">Jira, Locust, Psutil and editors</span></span><span class="plus" aria-hidden="true">+</span></button>
+    <div class="body"><div><div class="pad"><ul class="chips"><li>Jira</li><li>Locust</li><li>Psutil</li><li>VS Code</li><li>Android Studio</li><li>Bluetooth Mesh</li></ul></div></div></div>
+  </article>
+</div></section>
+
+<section id="proof"><div class="wrap">
+  <h2>Certifications, awards and education</h2>
+  <p class="sub">Credentials and results that back up the projects.</p>
+  <div class="card glass" style="margin-bottom:14px"><h3>Certifications</h3><ul class="certs"><li><span><b>SAP Certified Backend Developer</b><br><span style="color:var(--mute);font-size:14px">SAP Cloud Application Programming Model</span></span><a href="#" data-link="cert-sap">View certificate</a></li><li><span><b>Google Cloud Foundations Certificate</b><br><span style="color:var(--mute);font-size:14px">Google Cloud</span></span><a href="#" data-link="cert-gcp">View certificate</a></li><li><span><b>AWS Cloud Practitioner Essentials</b><br><span style="color:var(--mute);font-size:14px">Amazon Web Services</span></span><a href="#" data-link="cert-aws">View certificate</a></li><li><span><b>ServiceNow Administration Fundamentals</b><br><span style="color:var(--mute);font-size:14px">ServiceNow</span></span><a href="#" data-link="cert-servicenow">View certificate</a></li></ul></div>
+  <div class="two">
+    <div class="card glass"><h3>Achievements</h3><ul>
+      <li><b>Top 10</b> at CODE-RED 2025 (Unisys track), a national 24-hour hackathon at BMSITM</li>
+      <li><b>1st place</b> at SenseCrypt, an intra-college hackathon by IEEE-EMBS Society, BMSITM</li></ul></div>
+    <div class="card glass"><h3>Education</h3><ul class="edu">
+      <li><b>B.E. in Information Science, CGPA 9.1/10</b><span>B M S Institute of Technology and Management, Bengaluru</span></li>
+      <li><b>Grade XII, PCMB, 94.67%</b><span>K M W A PU College</span></li>
+      <li><b>Grade X, ICSE, 92.33%</b><span>Vijayashree Public School</span></li></ul></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="contact glass">
+    <h2>Let's build something together</h2>
+    <p class="sub" style="margin:0 auto">I'm looking for roles where I can ship full-stack and ML work. Email is the fastest way to reach me.</p>
+    <div class="btns">
+      <a class="btn p" href="mailto:monishh03@gmail.com">Email me</a>
+      <a class="btn" href="tel:+918660527545">Call +91 86605 27545</a>
+      <a class="btn" href="assets/Monish_U_Resume.pdf" download="Monish_U_Resume.pdf">Resume</a>
+      <a class="btn" href="#" data-link="linkedin">LinkedIn</a>
+      <a class="btn" href="#" data-link="github">GitHub</a>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer>Monish U, Bengaluru</footer>
+<script src="js/links.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
