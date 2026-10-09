@@ -10,7 +10,7 @@ window.LINKS = {
   "chat-github": "",
 
   // Certificate links (LinkedIn credential URL, Credly badge, Google Cloud Skills Boost, etc.)
-  "cert-sap": "",
+  "cert-sap": "https://www.credly.com/badges/8db7187b-523a-4593-aeab-9bdb3e02dd98/public_url",
   "cert-gcp": "",
   "cert-aws": "",
   "cert-servicenow": ""
