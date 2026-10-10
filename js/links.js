@@ -6,9 +6,9 @@ window.LINKS = {
   // Project links
   "neurograph-live": "https://biograph-seven.vercel.app/",
   "neurograph-github": "https://github.com/its-monishhh/biograph",
-  "perm-github": "",
+  "perm-github": "https://github.com/mounacj07/PERM",
   "perm-live": "",
-  "chat-github": "",
+  "chat-github": "https://github.com/mounacj07/blemeshchat",
   "event-github": "https://github.com/its-monishhh/event_app_final_b",
   "event-live": "",
   "skillnest-github": "https://github.com/OPxKK/skill-nest-learning-hub",
